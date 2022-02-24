@@ -35,8 +35,8 @@ jobs:
       - run: "yarn build"
       - run: "yarn jest --env=node --colors --forceExit"
 
-      - uses: "./packages/keybase-notifications"
-        if: always()
-        with:
-          job_status: ${{ job.status }}
-          opensentinel_token: ${{ secrets.OSL_TOKEN }}
+      # evermind - uses: "./packages/keybase-notifications"
+      # evermind   if: always()
+      # evermind   with:
+      # evermind     job_status: ${{ job.status }}
+      # evermind     opensentinel_token: ${{ secrets.OSL_TOKEN }}
